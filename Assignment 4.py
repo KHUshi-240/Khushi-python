@@ -37,7 +37,7 @@ for row in table.find_all('tr')[1:]:
                 'Vegetable Image': vegetable_image
             })
 
-# Create a Pandas DataFrame from the data
+
 df = pd.DataFrame(data)
 
 # Save the data to a CSV file
