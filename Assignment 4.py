@@ -2,14 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-# Send a GET request to the website
 url = "https://vegetablemarketprice.com/"
 response = requests.get(url)
 
-# Parse the HTML content using BeautifulSoup
 soup = BeautifulSoup(response.content, 'html.parser')
 
-# Find the table with the vegetable data
 table = soup.find('table', {'class': 'table table-striped'})
 
 # Extract the table headers
